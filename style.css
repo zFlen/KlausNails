@@ -1,0 +1,188 @@
+html {
+  height: 100%;
+  width: 100%;
+  font-family: 'Josefin Sans';
+  background-color: #F2EFE9;
+  margin: 0;
+}
+
+.header-pag{
+  display: flex;
+  height: 80px;
+  margin-left: 100px;
+  margin-right: 100px;
+  border-bottom: 1px solid #BEB2B2;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 35px;
+  font-weight: 400;
+  padding-right: 20px;
+  
+}
+
+header .container-header {
+  display: flex;
+}
+
+header .container-header a {
+  color: #000;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  font-weight: 200;
+  font-size: 25px;
+}
+
+.container-header-redes {
+  padding: 25px;
+}
+
+.container-header-redes img {
+  height: 30px;
+  width: 30px;
+}
+
+.container-header-redes a {
+  margin: 20px;
+  cursor: pointer;
+}
+
+.fondo-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 180px;
+  position: relative;
+}
+
+.img-fondo {
+  max-width: 100%;
+  height: auto;
+  opacity: 0.6;
+  margin-top: 150px;
+}
+
+.texto-center {
+  position: absolute;
+  font-size: 64px;
+  font-weight: 500;
+  margin-top: -200px;
+
+}
+
+.btn-agendar {
+  position: absolute;
+  cursor: pointer;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  border-width: 2px;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.btn-agendar p {
+  font-family: 'Josefin Sans';
+  font-weight: 500;
+  font-size: 15px;
+  margin: 15px 100px 15px 100px;
+}
+
+/* Segunda Parte */
+
+.servicios-container {
+  margin-top: 10px;
+  max-width: auto;
+  height: 1300px;
+  background-color:#FFF8F0;
+  margin-left: 0px;
+  margin-right: 0;
+}
+
+.card-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding-top: 20px;
+}
+section {
+  margin: 0;
+}
+.servicios-container header h2 {
+  font-size: 45px;
+  text-align: center;
+  font-weight: 200;
+}
+
+.card {
+  width: 400px;
+  aspect-ratio: 1 / 0.7;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4), 0 8px 18px rgba(0, 0, 0, 0.2);
+  position: relative;
+  padding: 10px;
+}
+
+.card .image-box img {
+  width: 100%;
+  height: 650px;
+  border-radius: 8px;
+  object-fit: cover;
+  transition:
+    0.5s ease-in-out;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border:  2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.card:hover img {
+  filter: 
+    grayscale(1)
+    brightness(0.4);
+}
+
+.card:hover::after {
+  opacity: 1;
+  inset: 20px;
+}
+
+.card:hover .img-descrip h2 {
+  color: white;
+  scale: 1;
+  opacity: 1;
+  visibility: visible;
+
+}
+
+.card:hover .img-descrip p {
+  opacity: 1;
+  transform: translateY(10);
+  color: white;
+  visibility: visible;
+}
+
+.img-descrip {
+  position: absolute;
+  bottom: 230px;
+  text-align: center;
+  padding: 35px;
+}
+
+.card .img-descrip {
+  visibility: hidden;
+}
+
